@@ -10,7 +10,7 @@ const prefix = '!!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!!help| !!invite`)
+client.user.setGame(`المطور فهد بن محمد `)
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
