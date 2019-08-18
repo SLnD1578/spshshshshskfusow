@@ -343,6 +343,13 @@ function play(guild, song) {
 
 
 
+client.on('ready', () => {
+    client.guilds.map((guild) => console.log(`Name: ${guild.name} (ID: ${guild.id})`));
+});
+
+
+
+
 
 
 
