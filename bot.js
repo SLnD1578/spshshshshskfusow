@@ -160,7 +160,7 @@ client.on('message', async msg => {
     command = command.slice(prefix.length)
     if (command === `play`) {
         const voiceChannel = msg.member.voiceChannel;
-        if (!voiceChannel) return msg.channel.send('يجب توآجد حضرتك بروم صوتي .');
+        if (!voiceChannel) return msg.channel.send('يجب توآجد في الروم صوتي .');
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         if (!permissions.has('CONNECT')) {
             
@@ -191,10 +191,10 @@ client.on('message', async msg => {
                     var videos = await youtube.searchVideos(searchString, 5);
                     let index = 0;
                     const embed1 = new Discord.RichEmbed()
-                    .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
+                    .setDescription(`**الرجاء إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-                    .setFooter("Slash Bot")
+                    .setFooter("Fahd Bot")
                     msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
                     
                     try {
