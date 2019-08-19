@@ -10,7 +10,7 @@ const prefix = '!!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`عويس`)
+  client.user.setGame(`test`)
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -333,6 +333,48 @@ function play(guild, song) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+client.on('message', message => {
+  if (message.channel.id === "612891170418458650") {
+    message.react('☑')
+      .then(() => {
+        message.react('🚫')
+      });
+  }
+});
 
 
 
