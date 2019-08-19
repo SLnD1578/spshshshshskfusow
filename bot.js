@@ -351,7 +351,14 @@ function play(guild, song) {
 
 
 
-
+client.on('message', message => {
+  if (message.channel.id === "ايدي الروم") {
+    message.react('☑')
+      .then(() => {
+        message.react('🚫')
+      });
+  }
+});
 
 
 
