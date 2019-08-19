@@ -10,7 +10,7 @@ const prefix = '!!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`test`)
+client.user.setGame(`www.goolg.com`)
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -33,6 +33,7 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 });
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -332,41 +333,6 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
   if (message.channel.id === "612891170418458650") {
     message.react('☑')
@@ -375,52 +341,6 @@ client.on('message', message => {
       });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 client.login(process.env.BOT_TOKEN);
